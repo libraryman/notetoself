@@ -7,8 +7,8 @@ const Random = require('meteor-random');
 var config = {};
 config.bucket = {
   slug: process.env.COSMIC_BUCKET,
-  read_key: '',
-  write_key: ''
+  read_key: '5d4ZFAPVr4o41OgQzAQrHajVWbaQRTtYtvYNCU4IGBg7jrDYds',
+  write_key: 'aTWpbYInUhqd5ATBawrSQY2zdBu6VA5f0cQd93MSUnRkKAguiO'
 }
 const Cosmic = require('cosmicjs');
 
@@ -86,7 +86,7 @@ const ViewNotes = () => {
     limit: 10,
     skip: 0
   };
-        
+
   Cosmic.getObjectType(config, params, (error, response)=>{ //fetches all notes
     var notes = []
     var noteText = [chalk.yellow("Return")]
@@ -163,7 +163,7 @@ const ViewNotes = () => {
                           MainMenu()
                         })
                       })
-                    
+
                   } else if(answers.morecontext === 'delete'){
                     var params = {
                       write_key: config.bucket.write_key,
