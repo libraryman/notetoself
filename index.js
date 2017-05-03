@@ -6,7 +6,7 @@ const Random = require('meteor-random');
 
 var config = {};
 config.bucket = {
-  slug: process.env.COSMIC_BUCKET=note-app,
+  slug: 'note-app',
   read_key: '5d4ZFAPVr4o41OgQzAQrHajVWbaQRTtYtvYNCU4IGBg7jrDYds',
   write_key: 'aTWpbYInUhqd5ATBawrSQY2zdBu6VA5f0cQd93MSUnRkKAguiO'
 }
